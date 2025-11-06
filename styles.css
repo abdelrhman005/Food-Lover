@@ -86,7 +86,8 @@ nav{
 .about{
     width: 100%;
     padding: 30px 5%;
-    height: 100vh;
+    height: auto;
+	background-color: #F4F2ED;
 }
 
 .about-head {
@@ -204,12 +205,13 @@ nav{
 }
 .menu {
     text-align: center;
+	background-color: #FFFFFF;
 
 	
 }
 
 .menu h2 {
-	margin: 30px 20px 0 0;
+	margin: 30px auto 0 0;
 	font-size: 40px;
 }
 
@@ -353,6 +355,7 @@ nav{
 	width: 100%;
 	background-color: #F4F2ED;
 	display: flex;
+	flex-wrap: wrap;
 
 
 }
