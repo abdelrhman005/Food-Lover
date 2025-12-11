@@ -45,6 +45,7 @@
             <img class="imgnone" src="images/about_img.png" alt="">
         </div>
     </section>
+
     <section class="offers">
         <div class="offers-head">
             <h2>our special offers</h2>
@@ -78,7 +79,18 @@
                     <span class="new-price">$25.00</span>
                 </div>
             </div>
-			</div>
+		</div>
+
+		<div class="btns">
+			<button class="btn1">&#10094;</button>
+			<button class="btn2">&#10095;</button>
+		</div>
+		
+		<div class="circle-con">
+			<i class="fa-solid white fa-circle circuleone"></i>
+			<i class="fa-solid  fa-circle circuletwo"></i>
+			<i class="fa-solid  fa-circle circulethree"></i>
+		</div>
     </section>
 
 	<section class="menu">
@@ -86,102 +98,7 @@
 		<p>Order Two and Get third free</p>
 
 		<div class="card-continer">
-			<div class="card">
-				<img src="images/food1.png" alt="">
-				<div class="card-text">
-					<h2>LASAL CHEESE <span>$18.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food2.png" alt="">
-				<div class="card-text">
-					<h2>JUMBO CRAB SHRIMP <span>$38.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food3.png" alt="">
-				<div class="card-text">
-					<h2>KOKTAIL JUCIE <span>$8.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food4.png" alt="">
-				<div class="card-text">
-					<h2>CAPO STEAK <span>$40.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food5.png" alt="">
-				<div class="card-text">
-					<h2>DONUTS <span>$13.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food6.png" alt="">
-				<div class="card-text">
-					<h2>CHEESE PIZZA <span>$40.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food7.jpeg" alt="">
-				<div class="card-text">
-					<h2>KOFTA MEAT <span>$20.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food8.jpeg" alt="">
-				<div class="card-text">
-					<h2>SPANISH PIES <span>$18.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food9.jpeg" alt="">
-				<div class="card-text">
-					<h2>CHEESE TOST <span>$10.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food10.jpeg" alt="">
-				<div class="card-text">
-					<h2>FRUIT SALAD <span>$18.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food11.jpeg" alt="">
-				<div class="card-text">
-					<h2>CHICKEN SHAWARMA <span>$48.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
-			<div class="card">
-				<img src="images/food12.jpeg" alt="">
-				<div class="card-text">
-					<h2>MEGA CHEESE PIZZA <span>$28.00</span></h2> 
-					<hr>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, necessitatibus!</p>
-				</div>
-			</div>
+
 		</div>
 
 		<button>EXPLORE FULL MENU</button>
@@ -215,15 +132,22 @@
 
 	<section class="Gallery">
 		<h2>Our Food Gallery</h2>
-		<div class="GalleryGrid">
-			<img src="images/gallery1.jpeg" alt="">
-			<img src="images/gallery2.jpeg" alt="">
-			<img src="images/gallery3.jpeg" alt="">
-			<img src="images/gallery4.jpeg" alt="">
-			<img src="images/gallery5.jpeg" alt="">
-			<img src="images/gallery6.jpeg" alt="">
-		</div>
+			<div class="GalleryGrid">
+				<img src="images/gallery1.jpeg" alt="">
+				<img src="images/gallery2.jpeg" alt="">
+				<img src="images/gallery3.jpeg" alt="">
+				<img src="images/gallery4.jpeg" alt="">
+				<img src="images/gallery5.jpeg" alt="">
+				<img src="images/gallery6.jpeg" alt="">
+			</div>
 	</section>
+
+	<div class="lightbox" id="lightbox">
+        <span class="close" id="closeBtn">X</span>
+        <span class="prev" id="prevBtn">&#10094;</span>
+        <img id="lightboxImg" src="">
+        <span class="next" id="nextBtn">&#10095;</span>
+	</div>
 
 	
 	<section class="contact">
@@ -249,11 +173,21 @@
 	</div>
 
 	<div class="input-contianer">
-		<input type="text" placeholder="Full Name">
-		<input type="text" placeholder="Email">
-		<input type="text" placeholder="Subject">
-		<textarea name="" placeholder="Massage"></textarea>
-		<button>Send Massege</button>
+		<form>
+			<input id="name" type="text" placeholder="Full Name">
+			<p id="nameP"></p>
+
+			<input id="email" type="email" placeholder="Email">
+			<p id="emailP"></p>
+
+			<input id="Subject" type="text" placeholder="Subject">
+			<p id="SubjectP"></p>
+
+			<textarea id="textArea" name="" placeholder="Massage"></textarea>
+			<p id="textAreaP"></p>
+
+			<button onclick="valid(event)">Send Massege</button>
+		</form>
 	</div>
 	</section>
 
@@ -261,6 +195,10 @@
 		<p>copyrights &copy;  2025 All rights reserved | designed by <a href="https://github.com/abdelrhman005">Abdelrhamn Mamdoh</a></p>
 	</footer>
 
+	<script src="slider.js"></script>
+	<script src="validinput.js"></script>
+		<script src="fill.js"></script>
+		<script src="bg.js"></script>
 
 </body>
 </html>

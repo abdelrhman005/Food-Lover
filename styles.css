@@ -1,9 +1,9 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-	
 	font-family: 'Quicksand', sans-serif;
 }
 header{
@@ -144,7 +144,7 @@ nav{
 	height: 100vh;
     background:linear-gradient(rgba(6, 0, 20, 0.953), black) ;
 	padding: 30px 0;
-    
+    position: relative;
 }
 
 .offers-head {
@@ -160,19 +160,20 @@ nav{
 }
 .offers-con{
     display: flex;
-    gap: 50px;
     justify-content: space-evenly;
     align-items: center;
     color: white;
     text-align: center;
+	overflow: hidden;
+	scroll-behavior: smooth;
 }
 .offers-item{
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    width: 250px;
-    height: 300px;
+	min-width: 100%;
+    height: auto;
     align-items: center;
 }
 .offers-item h3{
@@ -325,6 +326,7 @@ nav{
 .Gallery {
 	background: url("./images/offer-background.jpg") center center/cover;
 	text-align: center;
+	position: relative;
 	height: 100vh;
 	width: 100%;
 }
@@ -334,6 +336,7 @@ nav{
 	color: aliceblue;
 	margin: 0 40px;
 	font-size: 40px;
+	margin-bottom: 70px;
 }
 .Gallery img {
 	width: 280px;
@@ -347,7 +350,15 @@ nav{
 	grid-template-columns: repeat(3,1fr);
 	gap: 20px;
 	width: 80%;
-	margin: 60px auto;
+	margin: auto;
+
+}
+
+.bg {
+	width: 100%;
+	height: 80%;
+	position: relative;
+	top: 0;
 }
 
 .contact {
@@ -393,7 +404,6 @@ nav{
 	padding:50px;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
 }
 
 .input-contianer input {
@@ -403,6 +413,7 @@ nav{
 	background-color: #E3E2DD;
 	border: none;
 	border-radius: 10px;
+	margin-bottom: 10px;
 }
 
 .input-contianer textarea {
@@ -412,11 +423,12 @@ nav{
 	border: none;
 	padding: 10px;
 	background-color: #E3E2DD;
+	margin-bottom: 5px;
 
 }
 
 .input-contianer button {
-		width: 190px;
+	width: 190px;
 	height: 60px;
 	background-color: #e4b95b;
 	border: none;
@@ -442,4 +454,99 @@ footer {
 footer a {
 	color: #E4B95B;
 	font-weight: 600;
+}
+
+.btns button {
+	transform: translateY(-50%);
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	font-size: 24px;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50%;
+	position: relative;
+	border: none;
+} 
+
+.btns {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: start;
+	position: absolute;
+	top:50%;
+	padding: 0 30px;
+}
+
+.circle-con {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.fa-circle {
+	color: #848484;
+	margin-top: 6px;
+}
+
+.white {
+	color: #fff;
+}
+
+.input-contianer p{
+	color: red;
+	font-weight: bold;
+}
+
+/* Lightbox container */
+.lightbox {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* The big image */
+.lightbox img {
+    max-width: 85%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #000;
+}
+
+/* Buttons */
+.lightbox .close,
+.lightbox .prev,
+.lightbox .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+.lightbox .close {
+    top: 5%;
+    right: 5%;
+    transform: none;
+}
+
+.lightbox .prev { left: 5%; }
+.lightbox .next { right: 5%; }
+
+.lightbox .prev:hover,
+.lightbox .next:hover,
+.lightbox .close:hover {
+    background: #ddd;
 }
